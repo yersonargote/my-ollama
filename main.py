@@ -45,7 +45,7 @@ def rag(question: str, vectorstore: Chroma):
     llm = Ollama(
         # base_url="http://localhost:11434",
         model="llama2:13b",
-        verbose=True,
+        verbose=False,
         callback_manager=CallbackManager([StreamingStdOutCallbackHandler()]),
     )
 
